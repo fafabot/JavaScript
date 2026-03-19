@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Boa Noite</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background: radial-gradient(circle at bottom, #0b1a33, #020611 80%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LUA */
+.lua{
+    width:200px;
+    height:200px;
+    background:#f5f3ce;
+    border-radius:50%;
+    position:relative;
+    box-shadow:
+        0 0 50px #f5f3ce,
+        0 0 120px rgba(255,255,200,0.6);
+    margin-bottom:40px;
+}
+
+/* Crateras */
+.cratera{
+    position:absolute;
+    background:#d8d6a8;
+    border-radius:50%;
+}
+
+.c1{width:30px;height:30px;top:40px;left:60px;}
+.c2{width:20px;height:20px;top:120px;left:80px;}
+.c3{width:25px;height:25px;top:90px;left:130px;}
+.c4{width:15px;height:15px;top:60px;left:120px;}
+
+/* TEXTO */
+h1{
+    color:white;
+    font-size:70px;
+    letter-spacing:8px;
+    text-shadow:0 0 15px rgba(255,255,255,0.7);
+}
+
+/* ESTRELAS */
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    animation: brilho 3s infinite alternate;
+}
+
+@keyframes brilho{
+    from{opacity:0.2;}
+    to{opacity:1;}
+}
+
+/* ESTRELA CADENTE */
+.estrela-cadente{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    box-shadow:0 0 10px white;
+    animation: cair 6s linear infinite;
+}
+
+@keyframes cair{
+    0%{
+        transform:translate(-100px,-100px);
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    100%{
+        transform:translate(1000px,500px);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="lua">
+<div class="cratera c1"></div>
+<div class="cratera c2"></div>
+<div class="cratera c3"></div>
+<div class="cratera c4"></div>
+</div>
+
+<h1>Boa Noite</h1>
+
+<div class="estrela-cadente"></div>
+
+<script>
+/* GERAR MUITAS ESTRELAS */
+for(let i=0;i<120;i++){
+    let star = document.createElement("div")
+    star.className = "star"
+
+    star.style.top = Math.random()*100+"vh"
+    star.style.left = Math.random()*100+"vw"
+
+    star.style.animationDuration = (2+Math.random()*3)+"s"
+
+    document.body.appendChild(star)
+}
+</script>
+
+</body>
+</html>
