@@ -23,5 +23,5 @@ tres.addEventListener("mouseover", function(){
 })
 
 tres.addEventListener("mouseout", function(){
-    tres.src = "./img/3.png"
+    tres.src = "./img/3.jpg"
 })
