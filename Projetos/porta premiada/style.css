@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+div{
+    display: flex;
+    flex-direction: row;}
+img{
+    width: 300px;
+    max-height: 300px;
+}
+
+h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: black;
+}
