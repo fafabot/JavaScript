@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.opcoes {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+button {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+#resultado {
+  font-size: 28px;
+  background: rgba(255,255,255,0.1);
+  padding: 15px 30px;
+  border-radius: 15px;
+}
