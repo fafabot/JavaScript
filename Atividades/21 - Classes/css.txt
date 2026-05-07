@@ -1,0 +1,89 @@
+div {
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+/*1*/
+.ativo {
+    background-color: blue;
+    color: white;
+}
+
+/*4*/
+.destaque {
+    background-color: red;
+    border: 2px solid black;
+}
+
+/*5*/
+.grande {
+    font-size: 40px;
+}
+
+/*6*/
+#ex6 {
+    background-color: yellow;
+    border: 2px dashed black;
+}
+.escondido {
+    display: none;
+}
+
+/*7*/
+.hover {
+    background-color: lightblue;
+}
+
+/*8*/
+.botao {
+    background-color: orange;
+    border: olive solid 2px;
+}
+
+/*9*/
+.ex9 {
+    border: 2px dotted black;
+}
+.selecionado {
+    background-color: purple;
+}
+
+/*10*/
+.dark {
+    background-color: black;
+    color: white;
+}
+
+/*11*/
+.menu {
+    display: none;
+    width: 150px;
+}
+.mostrar {
+    display: block;
+}
+
+/*12*/
+.cores {
+    background-color: purple;
+}
+.borda {
+    border: 3px double black;
+}
+
+/*13*/
+.vermelho {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}

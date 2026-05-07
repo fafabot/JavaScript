@@ -1,0 +1,21 @@
+div {
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    align-content: center;
+    background-color: lightgray;
+}
+
+/*1*/
+.escuro {
+    background-color: black;
+    color: white;
+}
+
+/*2*/
+.ativo {
+    background-color: blue;
+    color: red;
+}
