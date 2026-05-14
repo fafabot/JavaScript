@@ -89,6 +89,16 @@ let perguntas = [
         ],
         correta: 0
     },
+    {
+        pergunta: "Qual dessas músicas não pertence ao albúm 'versos que nao sao pra vc'?",
+        respostas: [
+            "saudades",
+            "versos que nao sao pra vc",
+            "como antes",
+            "se eu te dissesse"
+        ],
+        correta: 2
+    },
 ];
 
 let perguntaAtual = 0;
