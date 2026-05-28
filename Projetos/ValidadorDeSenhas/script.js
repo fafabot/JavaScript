@@ -8,7 +8,7 @@ confirmar.addEventListener("input", function() {
     let letrasMaiusculas = /[A-Z]/.test(senha.value);
     let letrasMinusculas = /[a-z]/.test(senha.value);
     let caracteresEspeciais = /[!@#$%^&*(),.?":{}|<>]/.test(senha.value);
-    let tamanho = senha.value.length >= 8;
+    let tamanho = senha.value.length >= 12;
 
     if (
         senha.value === confirmar.value &&

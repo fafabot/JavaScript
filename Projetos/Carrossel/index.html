@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="produto">
 
-    <h1>Carrossel de Imagens</h1>
+        <h2>Anúncio</h2>
 
-    <div class="carrossel">
-        <img src="img/produto3-1.jpg" alt="Imagem 1" class="img ativa">
-        <img src="img/produto3-2.jpg" alt="Imagem 2" class="img">
-        <img src="img/produto3-3.jpg" alt="Imagem 3" class="img">
-    </div>
+        <div class="carrossel1">
+            <img src="img/produto3-1.jpg" alt="Imagem 1" class="ativa">
+            <img src="img/produto3-2.jpg" alt="Imagem 2">
+            <img src="img/produto3-3.jpg" alt="Imagem 3">
+        </div>
 
-    <div class="botoes">
-        <button onclick="imagemAnterior()">Anterior</button>
-        <button onclick="proximaImagem()">Próximo</button>
-    </div>
+        <div class="botoes">
+            <button onclick="imagemAnterior()">⟵</button>
+            <button onclick="proximaImagem()">⟶</button>
+        </div>
+
+        <div class="info-produto">
+            <h3>Fusca Miniatura Rosa Vintage</h3>
+            <p>R$ 129,90</p>
+        </div>
+
+    </section>
+
+    <!-- CARROSSEL AUTOMÁTICO -->
+    <section class="lancamentos">
+
+        <h2>Últimos Lançamentos do Cinema</h2>
+
+        <div class="carrossel2">
+            <img src="img/poster1.jpg" alt="Poster 1" class="ativa">
+            <img src="img/poster2.jpg" alt="Poster 2">
+            <img src="img/poster3.jpg" alt="Poster 3">
+            <img src="img/poster4.jpg" alt="Poster 4">
+            <img src="img/poster5.jpg" alt="Poster 5">
+        </div>
+
+    </section>
 
     <script src="script.js"></script>
 
