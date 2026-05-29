@@ -7,8 +7,6 @@ function fecharLogin() {
 }
 
 
-// Popup Imagem
-
 function abrirImagem() {
     document.getElementById("popupImagem").style.display = "flex";
 }
@@ -16,9 +14,6 @@ function abrirImagem() {
 function fecharImagem() {
     document.getElementById("popupImagem").style.display = "none";
 }
-
-
-// Popup Confirmação
 
 function popupConfirmacao() {
     document.getElementById("popupConfirmacao").style.display = "flex";
@@ -33,8 +28,6 @@ function confirmarExclusao() {
     fecharConfirmacao();
 }
 
-
-// Popup Curiosidade
 
 function mostrarCuriosidade() {
     let curiosidades = [
@@ -58,7 +51,6 @@ function fecharCuriosidade() {
 }
 
 
-// Popup Aviso
 
 function verificarSenha() {
     document.getElementById("popupAviso").style.display = "flex";
