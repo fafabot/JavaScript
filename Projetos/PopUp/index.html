@@ -4,39 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popups</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h1>Exercícios de Popup</h1>
 
-    <button onclick="abrirLogin()">Popup de Login</button>
+    <button onclick="abrirLogin()">1. Popup de Login</button>
 
-    <button onclick="popupConfirmacao()">Popup de Confirmação</button>
+    <button onclick="popupConfirmacao()">2. Popup de Confirmação</button>
 
-    <button onclick="mostrarCuriosidade()">Popup de Curiosidade</button>
+    <button onclick="mostrarCuriosidade()">4. Popup de Curiosidade</button>
 
-    <button onclick="verificarSenha()">Popup de Aviso</button>
+    <button onclick="verificarSenha()">5. Popup de Aviso</button>
 
     <div class="imagem-container">
-        <img src="img/imagem.jpg" alt="Imagem" onclick="abrirImagem()">
+        <h2>3. Popup com Imagem</h2>
+        <img src="./img/imagem.jpg"
+             alt=""
+             onclick="abrirImagem()">
     </div>
 
+    <!-- Popup Login -->
     <div class="popup" id="popupLogin">
         <div class="conteudo-popup">
             <h2>Login</h2>
+
             <input type="text" placeholder="Usuário">
+
             <input type="password" placeholder="Senha">
-            <button>Entrar</button>
-            <button onclick="fecharLogin()">Fechar</button>
+
+            <button onclick="fecharLogin()">Entrar</button>
         </div>
     </div>
 
+    <!-- Popup Confirmação -->
+    <div class="popup" id="popupConfirmacao">
+        <div class="conteudo-popup">
+            <h2>Deseja realmente excluir este item?</h2>
+
+            <button onclick="confirmarExclusao()">Sim</button>
+
+            <button onclick="fecharConfirmacao()">Não</button>
+        </div>
+    </div>
+
+    <!-- Popup Imagem -->
     <div class="popup" id="popupImagem">
         <div class="conteudo-popup imagem-popup">
-            <img src="img/imagem.jpg" alt="Imagem Grande">
+            <img src="./img/imagem.jpg"
+                 alt="">
+
             <button onclick="fecharImagem()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Popup Curiosidade -->
+    <div class="popup" id="popupCuriosidade">
+        <div class="conteudo-popup">
+            <h2>Curiosidade</h2>
+
+            <p id="textoCuriosidade"></p>
+
+            <button onclick="fecharCuriosidade()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Popup Aviso -->
+    <div class="popup" id="popupAviso">
+        <div class="conteudo-popup">
+            <h2>Digite a senha secreta</h2>
+
+            <input type="password" id="senhaDigitada">
+
+            <p id="resultadoSenha"></p>
+
+            <button onclick="validarSenha()">Verificar</button>
+
+            <button onclick="fecharAviso()">Fechar</button>
         </div>
     </div>
 

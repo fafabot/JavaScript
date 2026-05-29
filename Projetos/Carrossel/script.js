@@ -1,46 +1,56 @@
-let imagens1 = document.querySelectorAll(".carrossel1 img");
-let imagens2 = document.querySelectorAll(".carrossel2 img");
+let imagens1 = document.querySelectorAll(".carrossel1 img")
+let indiceAtual = 0
 
-let indiceAtual = 0;
-let indiceAtual2 = 0;
+function mostrarImagem() {
+    imagens1.forEach(function(img) {
+        img.classList.remove("ativa")
+    })
 
-function mostrarImagem(indice) {
-
-    imagens1.forEach((img) => {
-        img.classList.remove("ativa");
-    });
-
-    imagens1[indice].classList.add("ativa");
+    imagens1[indiceAtual].classList.add("ativa")
 }
 
 function proximaImagem() {
-    indiceAtual = (indiceAtual + 1) % imagens1.length;
-    mostrarImagem(indiceAtual);
+    indiceAtual++
+
+    if (indiceAtual >= imagens1.length) {
+        indiceAtual = 0
+    }
+
+    mostrarImagem()
 }
 
 function imagemAnterior() {
-    indiceAtual = (indiceAtual - 1 + imagens1.length) % imagens1.length;
-    mostrarImagem(indiceAtual);
+    indiceAtual--
+
+    if (indiceAtual < 0) {
+        indiceAtual = imagens1.length - 1
+    }
+
+    mostrarImagem()
 }
 
-function mostrarImagem2(indice) {
 
-    imagens2.forEach((img) => {
-        img.classList.remove("ativa");
-    });
 
-    imagens2[indice].classList.add("ativa");
+
+let imagens2 = document.querySelectorAll(".carrossel2 img")
+let indiceAtual2 = 0
+
+function mostrarImagem2() {
+    imagens2.forEach(function(img) {
+        img.classList.remove("ativa")
+    })
+
+    imagens2[indiceAtual2].classList.add("ativa")
 }
 
 function iniciarCarrossel() {
-
-    indiceAtual2++;
+    indiceAtual2++
 
     if (indiceAtual2 >= imagens2.length) {
-        indiceAtual2 = 0;
+        indiceAtual2 = 0
     }
 
-    mostrarImagem2(indiceAtual2);
+    mostrarImagem2()
 }
 
-setInterval(iniciarCarrossel, 3000);
+setInterval(iniciarCarrossel, 3000)
