@@ -1,0 +1,118 @@
+console.log("1 - Dobro de um Número;\n")
+let dobro = (numero) => {
+    return numero * 2
+}
+let num1 = Number(prompt("Digite um número:"))
+console.log("Dobro:", dobro(num1))
+
+
+console.log("\n")
+
+console.log("2 - Soma de Dois Números;\n")
+let somar = (a, b) => {
+    return a + b
+}
+let num2 = Number(prompt("Digite o primeiro número:"))
+let num3 = Number(prompt("Digite o segundo número:"))
+console.log("Resultado:", somar(num2, num3))
+
+
+console.log("\n")
+
+console.log("3 - Quadrado de um Número;\n")
+let quadrado = (numero) => {
+    return numero * numero
+}
+let num4 = Number(prompt("Digite um número:"))
+console.log("Quadrado:", quadrado(num4))
+
+
+console.log("\n")
+
+console.log("4 - Sucessor de um Número;\n")
+let sucessor = (numero) => {
+    return numero + 1
+}
+let num5 = Number(prompt("Digite um número:"))
+console.log("Sucessor:", sucessor(num5))
+
+
+console.log("\n")
+
+console.log("5 - Maior Número;\n")
+let maiorNumero = (a, b) => {
+    return a > b ? a : b
+}
+let num6 = Number(prompt("Digite o primeiro número:"))
+let num7 = Number(prompt("Digite o segundo número:"))
+console.log("Maior número:", maiorNumero(num6, num7))
+
+
+console.log("\n")
+
+console.log("6 - Verificar Par ou Ímpar;\n")
+let parOuImpar = (numero) => {
+    return numero % 2 === 0 ? "Par" : "Ímpar"
+}
+let num9 = Number(prompt("Digite um número:"))
+console.log(parOuImpar(num9))
+
+
+console.log("\n")
+
+console.log("7 - Verificar Número Positivo ou Negativo;\n")
+let verificarNumero = (numero) => {
+    if (numero > 0) {
+        return "Positivo"
+    } else if (numero < 0) {
+        return "Negativo"
+    } else {
+        return "Zero"
+    }
+}
+let num8 = Number(prompt("Digite um número:"))
+console.log(verificarNumero(num8))
+
+
+console.log("\n")
+
+console.log("8 - Calcular Média;\n")
+let media = (a, b, c) => {
+    return (a + b + c) / 3
+}
+let n1 = Number(prompt("Digite a primeira nota:"))
+let n2 = Number(prompt("Digite a segunda nota:"))
+let n3 = Number(prompt("Digite a terceira nota:"))
+console.log("Média:", media(n1, n2, n3))
+
+
+console.log("\n")
+
+console.log("9 - Calcular Desconto;\n")
+let calcularDesconto = (valor) => {
+    return valor * 0.8
+}
+let valor = Number(prompt("Digite o valor do produto:"))
+console.log("Valor com desconto:", calcularDesconto(valor))
+
+
+console.log("\n")
+
+console.log("10 - Verificar Aprovação;\n")
+let verificarAprovacao = (nota1, nota2) => {
+    let mediaFinal = (nota1 + nota2) / 2
+
+    if (mediaFinal >= 7) {
+        return "Aprovado"
+    } else if (mediaFinal >= 5) {
+        return "Recuperação"
+    } else {
+        return "Reprovado"
+    }
+}
+let nota1 = Number(prompt("Digite a primeira nota:"))
+let nota2 = Number(prompt("Digite a segunda nota:"))
+console.log(verificarAprovacao(nota1, nota2))
+
+console.log("\n")
+console.log("fim")

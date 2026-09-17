@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0b3d2e, #126b4f, #0b3d2e);
+    color: white;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+h1:first-child {
+    font-size: 40px;
+}
+
+#copaMundo {
+    margin-top: 25px;
+    padding: 30px 50px;
+
+    font-size: 35px;
+    font-weight: 100;
+
+    background-color: white;
+    color: #0b3d2e;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.carrossel {
+    width: 600px;
+    height: 300px;
+
+    margin-top: 25px;
+    padding: 15px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+    text-align: center;
+}
+
+.carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    font-size: 25px;
+    padding: 10px 15px;
+
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.carrossel button:first-of-type {
+    left: 25px;
+}
+
+.carrossel button:last-of-type {
+    right: 25px;
+}

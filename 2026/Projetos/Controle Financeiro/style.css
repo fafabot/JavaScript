@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffef;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e2b43;
+}
+
+.container {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.resumo {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.resumo div {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.resumo h3 {
+    margin-bottom: 10px;
+    color: #627596;
+}
+
+.resumo p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.entrada {
+    border-left: 5px solid #2b7a45;
+}
+
+.saida {
+    border-left: 5px solid #c42d36;
+}
+
+.saldo {
+    border-left: 5px solid #1e2b43;
+}
+
+.saldo.positivo p {
+    color: #2b7a45;
+}
+
+.saldo.negativo p {
+    color: #c42d36;
+}
+
+
+
+form {
+    background-color: white;
+    border: 1px solid #d5dde9;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d5dde9;
+    font-size: 16px;
+}
+
+input {
+    flex: 2;
+}
+
+select {
+    flex: 1;
+}
+
+button {
+    background-color: #e7bc30;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d1aa2b;
+}
+
+
+ul {
+    list-style: none;
+}
+
+#listagem li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #d5dde9;
+}
+
+.estatisticas {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #d5dde9;
+}
+
+.stat-item h3 {
+    color: #627596;
+    font-size: 14px;
+}
+
+.stat-item p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e2b43;
+}
+
+.stat-item.entrada {
+    border-left: 5px solid #2b7a45;
+}
+
+.stat-item.saida {
+    border-left: 5px solid #c42d36;
+}
+
+.stat-item.movimentacoes {
+    border-left: 5px solid #1e2b43;
+}

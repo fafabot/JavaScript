@@ -1,0 +1,367 @@
+console.log("1 - Dias da Semana;\n")
+let diaDaSemana = Number(prompt("Insira um dia da semana:"))
+switch (diaDaSemana)
+{
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda-Feira");
+        break;
+    case 3:
+        console.log("Terça-Feira");
+        break;
+    case 4:
+        console.log("Quarta-Feira");
+        break;
+    case 5:
+        console.log("Quinta-Feira");
+        break;
+    case 6:
+        console.log("Sexta-Feira");
+        break;
+    case 7:
+        console.log("Sábado");
+        break;
+    default:
+        console.log("Número inválido. Insira um valor entre 1 e 7.");
+        break;
+}
+
+console.log("\n")
+
+console.log("2 - Classificação de Idade;\n")
+let classificacao = Number(prompt("Insira sua idade:"))
+switch (classificacao)
+{
+    case 5:
+        console.log("Infantil A");
+        break;
+    case 10:
+        console.log("Infantil B");
+        break;
+    case 15:
+        console.log("Juvenil A");
+        break;
+    case 20:
+        console.log("Juvenil B");
+        break;
+    case 30:
+        console.log("Adulto");
+        break;
+    default:
+        console.log("Idade inválida. Insira 5, 10, 15, 20 ou 30.");
+        break;
+}
+
+console.log("\n")
+
+console.log("3 - Turno de Trabalho;\n")
+let turno = prompt("Informe seu turno (M, V ou N):")
+switch (turno)
+{
+    case "M":
+        console.log("Bom dia!");
+        break;
+    case "V":
+        console.log("Boa tarde!");
+        break;
+    case "N":
+        console.log("Boa noite!");
+        break;
+    default:
+        console.log("Turno inválido. Insira M, V ou N.");
+        break;
+}
+
+console.log("\n")
+
+console.log("4 - Números e Mensagens;\n")
+let mensagem = Number(prompt("Informe o número da sua mensagem:"))
+switch (mensagem)
+{
+    case 1:
+        console.log("Olá");
+        break;
+    case 2:
+        console.log("Hello");
+        break;
+    case 3:
+        console.log("Hola");
+        break;
+    case 4:
+        console.log("Bonjour");
+        break;
+    case 5:
+        console.log("Ciao");
+        break;
+    default:
+        console.log("Número fora do intervalo. Insira um valor entre 1 e 5.");
+        break;
+}
+
+console.log("\n")
+
+console.log("5 - Estações do Ano;\n")
+let estacao = Number(prompt("Informe a estação do ano:"))
+switch (estacao)
+{
+    case 1:
+        console.log("Primavera");
+        break;
+    case 2:
+        console.log("Verão");
+        break;
+    case 3:
+        console.log("Outono");
+        break;
+    case 4:
+        console.log("Inverno");
+        break;
+    default:
+        console.log("Estação inválida. Insira um número de 1 a 4.");
+        break;
+}
+
+console.log("\n")
+
+console.log("6 - Menu de Operações Matemáticas;\n")
+let math = Number(prompt("Informe a operação matemática:"))
+switch (math)
+{
+    case 1:
+        console.log("Somar");
+        break;
+    case 2:
+        console.log("Subtrair");
+        break;
+    case 3:
+        console.log("Multiplicar");
+        break;
+    case 4:
+        console.log("Dividir");
+        break;
+    default:
+        console.log("Operação inválida.");
+        break;
+}
+
+console.log("\n")
+
+console.log("7 - Código de Produto;\n")
+let produto = Number(prompt("Informe o código do produto:"))
+switch (produto)
+{
+    case 100:
+        console.log("Caneta");
+        break;
+    case 200:
+        console.log("Lápis");
+        break;
+    case 300:
+        console.log("Borracha");
+        break;
+    case 400:
+        console.log("Caderno");
+        break;
+    default:
+        console.log("Produto não encontrado.");
+        break;
+}
+
+console.log("\n")
+
+console.log("8 - Nota por Conceito;\n")
+let nota = prompt("Informe sua nota em letra:")
+switch (nota)
+{
+    case "A":
+        console.log("Excelente");
+        break;
+    case "B":
+        console.log("Bom");
+        break;
+    case "C":
+        console.log("Regular");
+        break;
+    case "D":
+        console.log("Ruim");
+        break;
+    case "F":
+        console.log("Reprovado");
+        break;
+    default:
+        console.log("Conceito inválido.");
+        break;
+}
+
+console.log("\n")
+
+console.log("9 - Jogo: Escolha sua Ação;\n")
+let acao = Number(prompt("Escolha sua ação:"))
+switch (acao)
+{
+    case 1:
+        console.log("Atacar");
+        break;
+    case 2:
+        console.log("Defender");
+        break;
+    case 3:
+        console.log("Curar");
+        break;
+    case 4:
+        console.log("Fugir");
+        break;
+    default:
+        console.log("Opção inválida. Você perdeu a vez.");
+        break;
+}
+
+console.log("\n")
+
+console.log("10 - Conversor Simples de Moeda;\n")
+let moeda = Number(prompt("Conversão de moeda:"))
+switch (moeda)
+{
+    case 1:
+        console.log("Real para Dólar");
+        console.log("1 Real brasileiro igual a 0,19 Dólar americano")
+        break;
+    case 2:
+        console.log("Dólar para Real");
+        console.log("1 Dólar americano igual a 5,20 Real brasileiro");
+        break;
+    case 3:
+        console.log("Real para Euro");
+        console.log("1 Real brasileiro igual a 0,16 Euro");
+        break;
+    default:
+        console.log("Opção inválida.");
+        break;
+}
+
+console.log("\n")
+
+console.log("11 - Tipo de Atendimento;\n")
+let atendimento = Number(prompt("Insira o número correspondente ao setor:"))
+switch (atendimento)
+{
+    case 1:
+        console.log("Suporte Técnico");
+        break;
+    case 2:
+        console.log("Financeiro");
+        break;
+    case 3:
+        console.log("Comercial");
+        break;
+    case 4:
+        console.log("Cancelamento");
+        break;
+    default:
+        console.log("Setor inválido.");
+        break;
+}
+
+console.log("\n")
+
+console.log("12 - Cardápio de Lanchonete;\n")
+let lanche = Number(prompt("Insira o número correspondente ao seu lanche:"))
+switch (lanche)
+{
+    case 1:
+        console.log("Hambúrguer");
+        break;
+    case 2:
+        console.log("Pizza");
+        break;
+    case 3:
+        console.log("Suco");
+        break;
+    case 4:
+        console.log("Sorvete");
+        break;
+    default:
+        console.log("Pedido inválido.");
+        break;
+}
+
+console.log("\n")
+
+console.log("13 - Avaliação do Atendimento;\n")
+let avaliacao = Number(prompt("Insira sua avaliação de 1 a 5:"))
+switch (avaliacao)
+{
+    case 1:
+        console.log("Péssimo");
+        break;
+    case 2:
+        console.log("Ruim");
+        break;
+    case 3:
+        console.log("Regular");
+        break;
+    case 4:
+        console.log("Bom");
+        break;
+    case 5:
+        console.log("Excelente");
+        break;
+    default:
+        console.log("Nota inválida.");
+        break;
+}
+
+console.log("\n")
+
+console.log("14 - Tipo de Usuário;\n")
+let usuario = Number(prompt("Insira o número correspondente ao seu tipo de usuário:"))
+switch (usuario)
+{
+    case 1:
+        console.log("Administrador");
+        break;
+    case 2:
+        console.log("Professor");
+        break;
+    case 3:
+        console.log("Aluno");
+        break;
+    case 4:
+        console.log("Visitante");
+        break;
+    default:
+        console.log("Usuário inválido.");
+        break;
+}
+
+console.log("\n")
+
+console.log("15 - Categoria de Filme;\n")
+let filme = Number(prompt("Insira o número correspondente a categoria do seu filme:"))
+switch (filme)
+{
+    case 1:
+        console.log("Ação");
+        break;
+    case 2:
+        console.log("Comédia");
+        break;
+    case 3:
+        console.log("Drama");
+        break;
+    case 4:
+        console.log("Terror");
+        break;
+    case 5:
+        console.log("Animação");
+        break;
+    default:
+        console.log("Categoria inválida.");
+        break;
+}
+
+console.log("\n")
+
+console.log("fim")

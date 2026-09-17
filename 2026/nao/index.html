@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite 👀</title>
+
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .botoes {
+        display: flex;
+        gap: 40px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .sim {
+        background-color: #1b831f;
+        color: black;
+        position: fixed;
+    }
+
+    .nao {
+        background-color: #e22618;
+        color: black;
+        position: relative;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 id="pergunta">Quer ir no shopping comigo hoje?</h1>
+
+<div class="botoes">
+    <button class="sim" id="sim" onclick="aceitou()">sim</button>
+    <button class="nao" id="nao" onmouseover="fugir()">nao😔</button>
+</div>
+
+<script>
+    let tamanho = 1;
+    let tentativas = 0;
+
+    function aceitou(){
+        alert("uhullllllllll");
+    }
+
+    function fugir(){
+        let nao = document.getElementById("nao");
+        let sim = document.getElementById("sim");
+        let texto = document.getElementById("pergunta");
+
+        let largura = window.innerWidth - nao.offsetWidth;
+        let altura = window.innerHeight - nao.offsetHeight;
+
+        nao.style.position = "absolute";
+        nao.style.left = Math.random() * largura + "px";
+        nao.style.top = Math.random() * altura + "px";
+
+        tamanho += 0.2;
+        sim.style.transform = "scale(" + tamanho + ")";
+
+
+        tentativas++;
+
+        if(tentativas == 1){
+            texto.innerText = "não acredito que vc pensou nisso🙁";
+        } else if(tentativas == 2){
+            texto.innerText = "😐";
+        } else if(tentativas == 3){
+            texto.innerText = "tem ctz msm?";
+        } else {
+            texto.innerText = "o 'sim' ta tao mais facil de clicar";
+        }
+    }
+</script>
+
+</body>
+</html>

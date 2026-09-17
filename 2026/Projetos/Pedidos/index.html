@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(pink,purple);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin:50px
+        }
+        button{
+            background-color: black;
+            font-size: 40px;
+            padding: 15px 30px;
+            color: white;
+            border-radius: 15px;
+            width: 200px;
+            border: none;
+        }
+        h1{
+            font-size: 100px;
+            font-family: Arial, Arial, Helvetica, sans-serif
+        }
+        .titulo{
+        text-align: center;
+        }
+        .botoes{
+            display: flex;
+            justify-content: center;
+            gap: 50px
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+    <h1>VAMOS FAZER UM CURSO SENAI?</h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoS">
+            <button onclick="sim()">SIM</button>
+        </div>
+        <div class="botaoN">
+            <button id="nao" onmouseover="desvia()" onclick="desvia()">NÃO</button>
+        </div>
+    </div>
+
+    <script>
+        function sim(){
+            location.href="https://youtu.be/fVeI_dYIZvg?si=MRGqBJBwUJ2-vMJQ"
+        }
+        function desvia(){
+            nao.style.position = "absolute"
+            nao.style.bottom = gerarPosicao(10, 80)
+            nao.style.left = gerarPosicao(10, 80)
+        }
+        function gerarPosicao(min, max) {
+            return(Math.random()*(max-min)+min)+"%"
+        }
+    </script>
+</body>
+</html>

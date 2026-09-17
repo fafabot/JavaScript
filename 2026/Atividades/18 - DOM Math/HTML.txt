@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+<h2>1 - Arredondando Número com round</h2>
+<input type="number" id="n1">
+<button onclick="ex1()">Arredondar</button>
+<p id="ex1"></p>
+<hr>
+
+<!-- 2 -->
+ <h2>2 - Arredondamento para Baixo</h2>
+<input type="number" id="n2">
+<button onclick="ex2()">Arredondar para baixo</button>
+<p id="ex2"></p>
+<hr>
+
+<!-- 3 -->
+<h2>3 - Arredondamento para Cima</h2>
+<input type="number" id="n3">
+<button onclick="ex3()">Arredondar para cima</button>
+<p id="ex3"></p>
+<hr>
+
+<!-- 4 -->
+<h2>4 - Raiz Quadrada</h2>
+<input type="number" id="n4">
+<button onclick="ex4()">Calcular raiz</button>
+<p id="ex4"></p>
+<hr>
+
+<!-- 5 -->
+<h2>5 - Potência de Número</h2>
+<input type="number" id="n5">
+<input type="number" id="potencia">
+<button onclick="ex5()">Calcular potência</button>
+<p id="ex5"></p>
+<hr>
+
+<!-- 6 -->
+<h2>6 - Maior Número</h2>
+<input type="number" id="n6">
+<input type="number" id="n61">
+<input type="number" id="n62">
+<button onclick="ex6()">Descobrir maior número</button>
+<p id="ex6"></p>
+<hr>
+
+<!-- 7 -->
+<h2>7 - Menor Número</h2>
+<input type="number" id="n7">
+<input type="number" id="n71">
+<input type="number" id="n72">
+<button onclick="ex7()">Descobrir menor número</button>
+<p id="ex7"></p>
+<hr>
+
+<!-- 8 -->
+<h2>8 - Sorteio de Número</h2>
+<button onclick="ex8()">Sortear número</button>
+<p id="ex8"></p>
+<hr>
+
+<!-- 9 -->
+<h2>9 - Simulador de Dado</h2>
+<input type="number" id="n9">
+<button onclick="ex9()">Lançar dado</button>
+<p id="ex9"></p>
+<hr>
+
+<script src="script.js"></script>
+</body>
+</html>
