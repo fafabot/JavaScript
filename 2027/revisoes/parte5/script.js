@@ -94,11 +94,11 @@ let imagem1 = document.getElementById("imagem1")
 let imagem2 = document.getElementById("imagem2")
 
 imagem1.addEventListener("click", function() {
-    imagem.src = "https://tenisbrasil.uol.com.br/wp-content/uploads/2026/09/gauff_uso_vibra_yellow-1200x800.jpg"
+    imagem.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3YxQ1E4dWOaiq9tUS9h6yJaZdCYvizkOni2rY0W4Yw&s=10"
 })
 
 imagem2.addEventListener("click", function() {
-    imagem.src = "https://tenisbrasil.uol.com.br/wp-content/uploads/2024/10/sabalenka_vibra_wuhan-1.jpg"
+    imagem.src = "https://mondiniplantas.cdn.magazord.com.br/img/2025/05/produto/6684/roseira-vermelho-rajada.jpg?ims=800x800"
 })
 
 
